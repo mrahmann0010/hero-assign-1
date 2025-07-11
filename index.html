@@ -5,38 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero First Assignment</title>
     <link rel="stylesheet" href="/styles.css">
+    <!-- Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
 
 
-    <header>
+    <header class="hero-wrapper">
         <nav class="">
-            <ul class="flex">
+            <ul class="flex align-cen">
                 <li>
-                    <a href="#">Logo</a>
+                    <a id="nav-logo" href="#">Logo</a>
                 </li>
                 <li>
-                    <button>
-                        <a class="" href="#">Sign Up</a>
-                    </button>
+                    <a class="btn" href="#">Sign Up</a>
                 </li>
             </ul>
         </nav>
+
+        <section class="hero-sec flex flex-col align-cen">
+            <h1>Cool Dark UI Template for Webflow Agencies</h1>
+            <a class="btn" href="#">Click here</a>
+        </section>
     </header>
 
 
-    <section class="flex jus-cen align-cen">
-        <div>
-            <h2>See it in Action</h2>
-            <p>Explore the live preview and imagine your brand in </p>
-            <button>Launch Live Preview</button>
-        </div>
-        <div>
-            <img src="/Assets/wc-big.png"/>
-        </div>
-    </section>
+    <main>
+        <section class="flex align-cen sec-action">
+            <div class="flex flex-col action-div">
+                <h2>See it in Action</h2>
+                <p>Explore the live preview and imagine your brand in </p>
+                <a class="btn" href="#">Stay Focused</a>
+            </div>
+            <div class="action-img">
+                <img src="/Assets/wc-mini.png"/>
+            </div>
+        </section>
+    </main>
 
-    <section class="sec-2 jus-cen">
+
+    
+
+    <section class="jus-cen sec-data">
         <h2>Joined Thousands of Productive Users</h2>
 
         <div class="flex sec-2-con">
@@ -58,32 +70,56 @@
 
 
 
-    <section class="sec-4 flex flex-col align-cen">
-        <div class="sec4-div flex flex-col">
+
+    <section>
+        <h2>What our users say</h2>
+        
+        <div class="flex flex-col">
+            <div class="flex flex-col">
+                <h4>Loved by Designers</h4>
+                <blockquote>This template instantly leveled up our presence</blockquote>
+                <div class="flex">
+                    <img src="/Assets/avatar.png" alt="user-image"/>
+                    <span class="user-data-box">
+                        <h5>Reviewer Name</h5>
+                        <p>Date</p>
+                    </span>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="sec-ready sec-data flex flex-col align-cen">
+        <!-- Added class sec-data for background col -->
+        <div class="sec-ready-div flex flex-col align-cen">
             <h2>Ready to Focus</h2>
-            <p>This template instantly up our presence</p>
-            <button>Get Started Free</button>
+            <p class="simple-p">This template instantly up our presence</p>
+            <a class="btn ready-btn" href="#">Get Started Feee</a>
         </div>
         
-        <div>
-            <img src="/Assets/wc-mini.png"/>
+        <div class="action-img">
+            <img src="/Assets/wc-big.png"/>
         </div>
 
     </section>
 
 
-    <section class="sec-form">
+    <section class="sec-form flex align-cen">
+        <span class="form-title">Let's Get in Touch</span>
         <form action="/submit" method="post">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="example@abc.com" required>
 
             <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="fullname" required>
+            <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
 
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
+            <textarea id="message" name="message" rows="6" placeholder="Your Message..." required></textarea>
 
-            <button type="submit">Submit</button>
+            <button class="btn form-btn" type="submit">Submit</button>
   </form>
 
     </section>
