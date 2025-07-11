@@ -80,7 +80,6 @@ a {
     font-weight: 400;
     cursor: pointer;
     transition: background-color 0.3s ease;
-
     flex: 0 0 auto;
     display: inline-block;
     align-self: flex-start;
@@ -313,5 +312,6 @@ footer {
     font-weight: 300;
     color: var(--text-primary-color);
 }
+
 
 /* The End */
