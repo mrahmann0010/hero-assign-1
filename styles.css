@@ -1,5 +1,140 @@
+:root {
+    --primary-color: #4E47FF;
+    --text-primary-color: #8987A1;
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+/* Reusable Class */
+
+section {
+    padding: 140px 140px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.jus-cen {
+    justify-content: center;
+}
+
+.align-cen {
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    font-size: 28px;
+    color: black;
+
+}
+
+a {
+    color: #0000ff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+button {
+    padding: 10px 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+}
+
+/* Navbar */
+
+nav ul {
+    width: 1140px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+nav ul li {
+    padding: 10px 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+
+/* Sections */
+
+
+.sec-2 {
+    /* background-color: #4E47FF; */
+}
+
+.sec-2 h2 {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.data-box {
+    display: block;
+    gap: 8px;
+}
+
+.data-box h3 {
+    color: var(--primary-color);
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.sec-2-con {
+    justify-content: space-around;
+}
+
+/* Section 4 */
+
+.sec-4 {
+    gap: 12px;
+}
+
+.sec4-div {
+    gap: 24px;
+}
+
+/* Footer */
+footer {
+    gap: 12px;}
+.logo-main {
+    font-size: 48px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+#logo-p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-primary-color);
+}
+
+.foot-links {
+    padding: 6px 8px;
+    color: var(--text-primary-color);
+
 }
