@@ -1,3 +1,4 @@
+/* Root Variables */
 :root {
     --primary-color: #4E47FF;
     --secondary-color: #e4e6ff;
@@ -5,6 +6,7 @@
     --text-primary-color: #8987A1;
 }
 
+/* Base Resets */
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +19,7 @@ body {
 }
 
 
-/* Reusable Class */
+/* Reusable Classes */
 
 section {
     margin: 80px 140px;
@@ -57,7 +59,7 @@ h2 {
     color: black;
 }
 
-p{
+p {
     font-size: 22px;
     color: var(--text-primary-color);
     font-weight: 300;
@@ -150,7 +152,7 @@ nav ul li {
 
 .sec-data h2 {
     text-align: center;
-    margin-bottom: 26px;
+    margin-bottom: 12px;
 }
 
 .data-box {
@@ -214,6 +216,7 @@ nav ul li {
     background-color: white;
     padding: 32px 36px;
     border-radius: 18px;
+    width: 32%;
 }
 
 .sec-box h4 {
@@ -248,40 +251,41 @@ nav ul li {
 }
 
 .form-title {
-    font-size: 64px;
+    font-size: 52px;
     font-weight: 500;
     display: block;
 }
 
     
-    label {
-      display: block;
-      margin-top: 15px;
-      color: #333;
-    }
+label {
+    display: block;
+    margin-top: 15px;
+    color: #333;
+}
 
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      width: 130%;
-      padding: 14px 10px 14px 18px;
-      margin-top: 5px;
-      box-sizing: border-box;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      color: #000;
-    }
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 130%;
+    padding: 14px 10px 14px 18px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #000;
+}
 
 input::placeholder,
 textarea::placeholder {
   font-size: 18px; 
   color: #888;
+  font-family: 'Roboto', sans-serif;
 }
 
-    .form-btn {
-        margin: 8px 0;
-        width: 100%;
-    }
+.form-btn {
+    margin: 8px 0;
+    width: 100%;
+}
 
 
 /* Footer */
@@ -308,5 +312,6 @@ footer {
     font-size: 16px;
     font-weight: 300;
     color: var(--text-primary-color);
-
 }
+
+/* The End */
